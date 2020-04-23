@@ -28,7 +28,7 @@ public class SockMerchant {
                 i = i - 2;
             }
         }
-        return totalPairs;
+        return totalPairs
     }
 
     private static final Scanner scanner = new Scanner(System.in);
