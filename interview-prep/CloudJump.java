@@ -10,8 +10,21 @@ public class CloudJump {
 
     // Complete the jumpingOnClouds function below.
     static int jumpingOnClouds(int[] c) {
-
-
+        int n = c.length;
+        int jumps = 0, i = 0;
+        while(i < n - 1) {
+            if(i == n - 2) {
+                jumps++;
+                return jumps;
+            }
+            if(c[i + 2] == 0) {
+                i = i + 2;
+            } else {
+                i = i + 1;
+            }
+            jumps++;
+        }
+        return jumps;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
