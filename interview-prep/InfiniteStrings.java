@@ -26,7 +26,7 @@ public class InfiniteStrings {
                 finalAs++;
             }
         }
-        return finalAs
+        return finalAs;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
